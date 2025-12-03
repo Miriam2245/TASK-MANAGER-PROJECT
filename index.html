@@ -7,30 +7,161 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="sign-up-section">
-      <div class="logo-cont">
-        <img src="images/icon.png" alt="">
-        <h1>Welcome Back</h1>
-        <p>Enter your details to access your account</p>
+    <div class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-check-square"></i>
+        </div>
+        <span>TaskMaster</span>
       </div>
-      <div class="tabs">
-        <button class="tablinks">Log In</button>
-        <button class="tablinks">Sign Up</button>
-      </div>
-      <div class="form-container">
-        <form action="">
-          <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+
+      <div class="user-profile">
+        <div class="user-info">
+          <div class="user-avatar">M</div>
+          <div class="user-details">
+            <h3>mariam mussa</h3>
+            <p>mkiangi@gmail.com</p>
           </div>
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <div class="nav-item active">
+          <i class="fas fa-th-large"></i>
+          <span>Dashboard</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-tasks"></i>
+          <span>Tasks</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-users"></i>
+          <span>Community</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-dollar-sign"></i>
+          <span>Expenses</span>
+        </div>
+        <div class="nav-item">
+          <i class="far fa-sticky-note"></i>
+          <span>Notes</span>
+        </div>
+        <div class="nav-item">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </div>
+      </nav>
+
+      <div class="logout">
+        <button class="logout-btn">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <h1>Good morning, mariam mussa!</h1>
+        <p>Here's what's happening with your productivity today</p>
+      </div>
+
+      <div class="dashboard">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Active Tasks</span>
+              <div class="stat-icon blue">
+                <i class="fas fa-check-square"></i>
+              </div>
+            </div>
+            <div class="stat-value">0</div>
+            <div class="stat-label">0 completed</div>
           </div>
-          <button type="submit" class="submit-btn">Submit</button>
-        </form>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Total Expenses</span>
+              <div class="stat-icon cyan">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+            </div>
+            <div class="stat-value">$0.00</div>
+            <div class="stat-label">This period</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Total Notes</span>
+              <div class="stat-icon green">
+                <i class="far fa-sticky-note"></i>
+              </div>
+            </div>
+            <div class="stat-value">0</div>
+            <div class="stat-label">Saved notes</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-header">
+              <span class="stat-title">Completion Rate</span>
+              <div class="stat-icon purple">
+                <i class="fas fa-chart-line"></i>
+              </div>
+            </div>
+            <div class="stat-value">0%</div>
+            <div class="stat-label">Task completion</div>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="section-card">
+            <div class="section-header">
+              <i class="far fa-clock"></i>
+              <h2 class="section-title">Recent Tasks</h2>
+            </div>
+            <div class="empty-state">
+              <div class="empty-icon">
+                <i class="fas fa-check-square"></i>
+              </div>
+              <div class="empty-text">No tasks yet</div>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-header">
+              <i class="fas fa-bolt"></i>
+              <h2 class="section-title">Quick Actions</h2>
+            </div>
+            <div class="action-item">
+              <div class="action-icon blue">
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="action-content">
+                <h4>Create New Task</h4>
+                <p>Add a task to your list</p>
+              </div>
+            </div>
+            <div class="action-item">
+              <div class="action-icon cyan">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <div class="action-content">
+                <h4>Track Expense</h4>
+                <p>Record a new expense</p>
+              </div>
+            </div>
+            <div class="action-item">
+              <div class="action-icon green">
+                <i class="far fa-sticky-note"></i>
+              </div>
+              <div class="action-content">
+                <h4>Write Note</h4>
+                <p>Capture your thoughts</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-    </main>
+    </div>
   </body>
 </html>
