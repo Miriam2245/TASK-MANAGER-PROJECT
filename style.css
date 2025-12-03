@@ -2,11 +2,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--orange);
 }
 .sign-up-section {
   width: 500px;
-  height: 300px;
+  height: 700px;
   margin-top: 8rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   background-color: lightpink;
+}
+.logo-cont {
+  display: flex;
+  height: 300px;
+  background-color: lightblue;
 }
